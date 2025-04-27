@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Proyecto Next.js + shadcn/ui + Tailwind CSS
 
-## Getting Started
+Este proyecto fue construido utilizando **Next.js**, **shadcn/ui** y **Tailwind CSS**, siguiendo las mejores prácticas para el desarrollo moderno de aplicaciones web.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 📦 Tecnologías principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Framework de React para aplicaciones web rápidas y escalables.
+- **shadcn/ui**: Librería de componentes de UI accesibles y personalizables.
+- **Tailwind CSS**: Framework de utilidades CSS para un diseño ágil y responsive.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# ⚙️ Instalación y ejecución
 
-## Learn More
+Sigue estos pasos para levantar el proyecto en tu entorno local:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona el repositorio:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Instala las dependencias:
 
-## Deploy on Vercel
+    ```bash
+    npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Inicia el servidor de desarrollo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    npm run dev
+    ```
+
+4. Abre tu navegador y accede a:
+
+    ```
+    http://localhost:3000
+    ```
+
+¡Listo! Podrás ver la aplicación corriendo localmente.
+
+---
+
+# ✨ Características principales
+
+- Diseño moderno y totalmente responsivo.
+- Componentes reutilizables y accesibles con shadcn/ui.
+- Estilización rápida y eficiente con Tailwind CSS.
+- Arquitectura flexible para facilitar la escalabilidad y el mantenimiento.
+
+---
+
+# 📚 Aprende más
+
+- [Documentación de Next.js](https://nextjs.org/docs)
+- [Documentación de shadcn/ui](https://ui.shadcn.dev/)
+- [Documentación de Tailwind CSS](https://tailwindcss.com/docs)
+
+---
+
+# 🚀 Despliegue
+
+La forma más sencilla de desplegar tu aplicación es usando **Vercel**, la plataforma creada por los mismos desarrolladores de Next.js.
+
+Consulta la guía de despliegue aquí:
+
+- [Documentación de despliegue de Next.js](https://nextjs.org/docs/app/building-your-application/deploying)
+
