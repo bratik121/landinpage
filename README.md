@@ -19,7 +19,7 @@ Sigue estos pasos para levantar el proyecto en tu entorno local:
 1. Clona el repositorio:
 
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/bratik121/landinpage.git
     ```
 
 2. Instala las dependencias:
