@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { MdStar } from "react-icons/md";
+import { AnimatePresence, motion } from "framer-motion";
 
 import testimonial1Img from "@/assets/landing/testimonials/testi1.jpg";
 import testimonial2Img from "@/assets/landing/testimonials/testi2.png";
@@ -60,44 +61,106 @@ const Testimonials = (props: Props) => {
 		}
 	};
 
+	const imageVariants = {
+		initial: { opacity: 0 },
+		animate: { opacity: 1 },
+		exit: { opacity: 0 },
+	};
+
 	return (
 		<div className="flex flex-col items-center  ">
 			<div className="w-[80%] rounded-lg bg-primary-700 flex overflow-hidden max-h-[400px] text-white ">
 				{/* Img */}
-				<img
-					src={testimonials[selectedIndex].image}
-					alt=""
-					className="w-[30%] h-full object-cover"
-				/>
+				<AnimatePresence mode="wait">
+					<motion.img
+						key={selectedIndex}
+						src={mockTestimonials[selectedIndex].image}
+						alt=""
+						className="w-[30%] h-full object-cover"
+						variants={imageVariants}
+						initial="initial"
+						animate="animate"
+						exit="exit"
+						transition={{ duration: 0.4 }}
+					/>
+				</AnimatePresence>
+
 				{/* Info */}
 				<div className="w-[70%] flex flex-col gap-y-8 min-h-full  p-8 justify-between">
-					{/* Stars */}
-					<div className="flex items-center gap-x-1">
-						{[...Array(testimonials[selectedIndex].rating)].map((_, index) => (
-							<MdStar key={index} className="text-yellow-400" size={20} />
-						))}
-					</div>
+					<AnimatePresence mode="wait">
+						<motion.div
+							key={selectedIndex + "stars"}
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{ staggerChildren: 0.1, delayChildren: 0.2 }}
+							className="flex items-center gap-x-1"
+						>
+							{[...Array(testimonials[selectedIndex].rating)].map(
+								(_, index) => (
+									<motion.span
+										key={index}
+										initial={{ scale: 0 }}
+										animate={{ scale: 1 }}
+										transition={{ type: "spring", stiffness: 300 }}
+									>
+										<MdStar className="text-yellow-400" size={20} />
+									</motion.span>
+								)
+							)}
+						</motion.div>
+					</AnimatePresence>
 
-					<p className="text-4xl cursor-pointer" onClick={handleNext}>
-						{testimonials[selectedIndex].message}
-					</p>
-					{/* Name and Role */}
+					<AnimatePresence mode="wait">
+						<motion.p
+							key={selectedIndex + "message"}
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: -20 }}
+							transition={{ duration: 0.3 }}
+							className="text-4xl cursor-pointer"
+							onClick={handleNext}
+						>
+							{testimonials[selectedIndex].message}
+						</motion.p>
+					</AnimatePresence>
+
 					<div className="flex flex-col gap-y-4">
-						{/* Name */}
-						<div className="flex items-center gap-x-2">
-							<div className="h-1 w-4 bg-white"></div>
-							<span className="text-xl">
-								{testimonials[selectedIndex].name}{" "}
-							</span>
-						</div>
+						<AnimatePresence mode="wait">
+							<motion.div
+								key={selectedIndex + "name"}
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								className="flex items-center gap-x-2"
+							>
+								<motion.div
+									initial={{ width: 0 }}
+									animate={{ width: 16 }}
+									transition={{ duration: 0.3 }}
+									className="h-1 bg-white"
+								/>
+								<motion.span
+									initial={{ x: -10 }}
+									animate={{ x: 0 }}
+									className="text-xl"
+								>
+									{testimonials[selectedIndex].name}
+								</motion.span>
+							</motion.div>
+						</AnimatePresence>
 
-						{/* Role */}
-						<p className="text-c_gray-100">
-							{testimonials[selectedIndex].role},{" "}
-							{testimonials[selectedIndex].company}
-						</p>
+						<AnimatePresence mode="wait">
+							<motion.p
+								key={selectedIndex + "role"}
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ delay: 0.2 }}
+								className="text-c_gray-100"
+							>
+								{testimonials[selectedIndex].role},{" "}
+								{testimonials[selectedIndex].company}
+							</motion.p>
+						</AnimatePresence>
 					</div>
-
 					{/* Controller */}
 					<div className="flex items-center gap-x-2">
 						{testimonials.map((_, index) => {
