@@ -128,6 +128,7 @@
 }
 
 @theme {
+	--color-c_gray-100: #e9d7fe;
 	--color-c_gray-200: #475467;
 	--color-c_gray-300: #667085;
 	--color-c_gray-400: #98a2b3;
