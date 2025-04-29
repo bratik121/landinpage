@@ -6,6 +6,7 @@ import Stats from "./sections/Stats/Stats";
 import Features from "./sections/Features/Features";
 import Testimonials from "./sections/Testimonials/Testimonials";
 import Contracts from "./sections/Contracts/Contracts";
+import FAQ from "./sections/FAQ/FAQ";
 
 type Props = {};
 
@@ -20,6 +21,7 @@ const LandingPage = (props: Props) => {
 				<Features />
 				<Testimonials />
 				<Contracts />
+				<FAQ />
 			</div>
 		</div>
 	);
