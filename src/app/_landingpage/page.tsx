@@ -9,6 +9,7 @@ import Contracts from "./sections/Contracts/Contracts";
 import FAQ from "./sections/FAQ/FAQ";
 import ContactUs from "./sections/ContactUs/ContactUs";
 import Reviews from "./sections/Reviews/Reviews";
+import Footer from "./sections/Footer/Footer";
 
 type Props = {};
 
@@ -26,6 +27,7 @@ const LandingPage = (props: Props) => {
 				<FAQ />
 				<Reviews />
 				<ContactUs />
+				<Footer />
 			</div>
 		</div>
 	);
