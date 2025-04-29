@@ -59,8 +59,12 @@ const MenuContent = () => {
 					</p>
 				</div>
 				<div className="flex items-center gap-x-2 text-sm font-medium">
-					<span className="text-c_gray-200 cursor-pointer">Dismiss</span>
-					<span className="text-primary-500 cursor-pointer">Channelog</span>
+					<span className="text-c_gray-200 cursor-pointer hover:underline">
+						Dismiss
+					</span>
+					<span className="text-primary-500 cursor-pointer hover:underline">
+						Channelog
+					</span>
 				</div>
 			</div>
 		</div>

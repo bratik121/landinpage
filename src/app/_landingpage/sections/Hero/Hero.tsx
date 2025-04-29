@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import React from "react";
 import { SlQuestion } from "react-icons/sl";
-import Charts from "./Charts";
+import Charts from "./Charts/Charts";
 
 type Props = {};
 
