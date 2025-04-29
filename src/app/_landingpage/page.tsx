@@ -8,6 +8,7 @@ import Testimonials from "./sections/Testimonials/Testimonials";
 import Contracts from "./sections/Contracts/Contracts";
 import FAQ from "./sections/FAQ/FAQ";
 import ContactUs from "./sections/ContactUs/ContactUs";
+import Reviews from "./sections/Reviews/Reviews";
 
 type Props = {};
 
@@ -23,6 +24,7 @@ const LandingPage = (props: Props) => {
 				<Testimonials />
 				<Contracts />
 				<FAQ />
+				<Reviews />
 				<ContactUs />
 			</div>
 		</div>
