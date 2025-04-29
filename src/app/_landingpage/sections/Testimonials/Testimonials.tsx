@@ -7,8 +7,6 @@ import testimonial1Img from "@/assets/landing/testimonials/testi1.jpg";
 import testimonial2Img from "@/assets/landing/testimonials/testi2.png";
 import testimonial3Img from "@/assets/landing/testimonials/testi3.png";
 
-type Props = {};
-
 export type Testimonial = {
 	name: string;
 	role: string;
@@ -48,9 +46,8 @@ export const mockTestimonials: Testimonial[] = [
 	},
 ];
 
-const Testimonials = (props: Props) => {
-	const [testimonials, setTestimonials] =
-		React.useState<Testimonial[]>(mockTestimonials);
+const Testimonials = () => {
+	const [testimonials] = React.useState<Testimonial[]>(mockTestimonials);
 	const [selectedIndex, setSelectedIndex] = React.useState(0);
 
 	const handleNext = () => {
@@ -164,7 +161,6 @@ const Testimonials = (props: Props) => {
 					{/* Controller */}
 					<div className="flex items-center gap-x-2">
 						{testimonials.map((_, index) => {
-							console.log(index, selectedIndex);
 							return (
 								<div
 									key={_.name}

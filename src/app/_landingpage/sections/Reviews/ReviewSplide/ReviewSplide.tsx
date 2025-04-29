@@ -8,8 +8,6 @@ import review4Img from "@/assets/landing/testimonials/testi4.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
-type Props = {};
-
 export type Review = {
 	name: string;
 	rating: number;
@@ -53,7 +51,7 @@ export const reviews: Review[] = [
 		image: review4Img.src,
 	},
 ];
-const ReviewSplide = (props: Props) => {
+const ReviewSplide = () => {
 	return (
 		<Splide
 			hasTrack={false}

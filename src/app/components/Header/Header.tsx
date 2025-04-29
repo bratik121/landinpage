@@ -1,11 +1,10 @@
 import React from "react";
 import logo from "@/assets/logo.png";
+
 import { Button } from "@/components/ui/button";
 import { NavigationMenuDemo } from "./HederNavigationMenu";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
 	return (
 		<div className="w-full flex items-center justify-between py-4 ">
 			<div className="flex items-center gap-x-8">

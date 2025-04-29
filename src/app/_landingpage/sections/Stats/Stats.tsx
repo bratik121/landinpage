@@ -2,8 +2,6 @@ import React from "react";
 import { SectionHeader } from "../components";
 import KPI from "./Kpi";
 
-type Props = {};
-
 const stats = [
 	{
 		value: 400,
@@ -22,7 +20,7 @@ const stats = [
 	},
 ];
 
-const Stats = (props: Props) => {
+const Stats = () => {
 	return (
 		<div className="flex flex-col gap-y-16 items-center">
 			<SectionHeader

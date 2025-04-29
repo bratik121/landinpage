@@ -1,14 +1,7 @@
 "use client";
-import { TrendingUp } from "lucide-react";
-import { Label, LabelList, RadialBar, RadialBarChart } from "recharts";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+
+import { LabelList, RadialBar, RadialBarChart } from "recharts";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
 	ChartConfig,
 	ChartContainer,

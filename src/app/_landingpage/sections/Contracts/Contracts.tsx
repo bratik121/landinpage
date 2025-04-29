@@ -8,9 +8,7 @@ import contractImg5 from "@/assets/landing/contracts/Image-4.png";
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-const Contracts = (props: Props) => {
+const Contracts = () => {
 	const containerVariants = {
 		hidden: { opacity: 0 },
 		visible: {

@@ -1,6 +1,7 @@
 import React from "react";
-import "./style.css";
 import { MdStar } from "react-icons/md";
+
+import "./style.css";
 type Props = {
 	name: string;
 	rating: number;
@@ -22,7 +23,7 @@ const Review = ({ company, message, name, rating, role, image }: Props) => {
 			<div className="absolute w-full h-full top-0 left-0 p-4 flex items-end">
 				<div className="w-full glass cursor-pointer p-4 text-white flex flex-col gap-y-4">
 					<div className="message">
-						<p>"{message}"</p>
+						<p>{`"${message}"`}</p>
 					</div>
 					<div className="flex items-center gap-x-1">
 						{[...Array(rating)].map((_, index) => (

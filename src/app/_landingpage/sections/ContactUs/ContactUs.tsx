@@ -4,9 +4,7 @@ import React from "react";
 import contacUsImg from "@/assets/landing/contac-us/contact-us.jpg";
 import { Button } from "@/components/ui/button";
 
-type Props = {};
-
-const ContactUs = (props: Props) => {
+const ContactUs = () => {
 	const containerVariants = {
 		hidden: { opacity: 0, y: 20 },
 		visible: {

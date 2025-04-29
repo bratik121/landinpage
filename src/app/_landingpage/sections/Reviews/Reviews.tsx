@@ -2,9 +2,7 @@ import React from "react";
 import ReviewSplide from "./ReviewSplide/ReviewSplide";
 import { Button } from "@/components/ui/button";
 
-type Props = {};
-
-const Reviews = (props: Props) => {
+const Reviews = () => {
 	return (
 		<div className="">
 			<div className="flex flex-col gap-y-2 w-full">

@@ -2,7 +2,6 @@ import React from "react";
 import logo from "@/assets/logo.png";
 import appleLogo from "@/assets/Apple_logo.png";
 import googleLogo from "@/assets/Google_Play_logo.png";
-type Props = {};
 
 const headers: string[] = [
 	"Product",
@@ -58,13 +57,13 @@ const links: { label: string; tag?: string }[][] = [
 		{ label: "Contact" },
 	],
 ];
-const Footer = (props: Props) => {
+const Footer = () => {
 	return (
 		<div className="flex flex-col items-center gap-y-8">
 			<div className="w-full flex">
 				<div className="w-[75%] flex flex-col gap-y-4">
 					<div className="w-full grid grid-cols-5">
-						{headers.map((header, index) => (
+						{headers.map((header) => (
 							<div className="text-c_gray-900 font-medium" key={header}>
 								{header}
 							</div>

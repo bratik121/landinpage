@@ -7,7 +7,6 @@ import {
 	CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { FaMinus, FaPlus } from "react-icons/fa6";
-import { AnimatePresence, motion } from "framer-motion";
 
 type QAItem = {
 	question: string;

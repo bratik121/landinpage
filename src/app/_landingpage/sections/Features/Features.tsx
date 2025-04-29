@@ -34,9 +34,7 @@ const features: Feature[] = [
 	},
 ];
 
-type Props = {};
-
-const Features = (props: Props) => {
+const Features = () => {
 	const containerVariants = {
 		hidden: { opacity: 0 },
 		visible: {

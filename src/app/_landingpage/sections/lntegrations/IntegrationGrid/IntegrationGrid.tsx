@@ -54,9 +54,7 @@ const integrations: Integration[] = [
 	},
 ];
 
-type Props = {};
-
-const IntegrationGrid = (props: Props) => {
+const IntegrationGrid = () => {
 	const containerVariants = {
 		hidden: { opacity: 0 },
 		visible: {

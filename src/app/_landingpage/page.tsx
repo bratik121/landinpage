@@ -11,9 +11,7 @@ import ContactUs from "./sections/ContactUs/ContactUs";
 import Reviews from "./sections/Reviews/Reviews";
 import Footer from "./sections/Footer/Footer";
 
-type Props = {};
-
-const LandingPage = (props: Props) => {
+const LandingPage = () => {
 	return (
 		<div className="w-full max-w-screen overflow-x-hidden px-32 ">
 			<Header />
