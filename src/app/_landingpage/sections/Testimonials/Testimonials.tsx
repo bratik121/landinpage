@@ -62,7 +62,7 @@ const Testimonials = (props: Props) => {
 
 	return (
 		<div className="flex flex-col items-center  ">
-			<div className="w-[70%] rounded-lg bg-primary-700 flex overflow-hidden max-h-[400px] text-white ">
+			<div className="w-[80%] rounded-lg bg-primary-700 flex overflow-hidden max-h-[400px] text-white ">
 				{/* Img */}
 				<img
 					src={testimonials[selectedIndex].image}
@@ -86,11 +86,13 @@ const Testimonials = (props: Props) => {
 						{/* Name */}
 						<div className="flex items-center gap-x-2">
 							<div className="h-1 w-4 bg-white"></div>
-							<span>{testimonials[selectedIndex].name} </span>
+							<span className="text-xl">
+								{testimonials[selectedIndex].name}{" "}
+							</span>
 						</div>
 
 						{/* Role */}
-						<p>
+						<p className="text-c_gray-100">
 							{testimonials[selectedIndex].role},{" "}
 							{testimonials[selectedIndex].company}
 						</p>
