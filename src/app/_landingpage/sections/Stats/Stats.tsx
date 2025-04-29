@@ -30,7 +30,7 @@ const Stats = (props: Props) => {
 				description="Everything you need to convert, engage, and retain more users."
 			/>
 			{/* Kpis */}
-			<div className="flex flex-col md:flex-row items-center gap-x-10">
+			<div className="flex flex-col md:flex-row items-center gap-x-28">
 				{stats.map((stat, index) => (
 					<KPI
 						key={index}

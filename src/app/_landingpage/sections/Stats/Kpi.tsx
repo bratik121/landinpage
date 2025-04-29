@@ -14,7 +14,7 @@ const KPI = ({ description, nomenclature, value }: Props) => {
 				<CountUp to={value} />
 				{nomenclature && <span>{nomenclature}</span>}
 			</div>
-			<p className="text-c_gray-900 font-medium">{description}</p>
+			<p className="text-c_gray-900 font-medium text-lg">{description}</p>
 		</div>
 	);
 };

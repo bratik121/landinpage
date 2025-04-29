@@ -1,18 +1,18 @@
-import React from "react";
+import React, { JSX } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
 type Props = {
-	img: string;
+	icon: JSX.Element;
 	title: string;
 	description: string;
 };
 
-const IntegrationItem = ({ title, description, img }: Props) => {
+const FeatureItem = ({ title, description, icon }: Props) => {
 	return (
 		<div className="flex flex-col gap-y-4 items-center text-center">
-			{/* Logo */}
+			{/* Icon */}
 			<div className="p-4 border border-c_gray-50 flex items-center rounded-md">
-				<img src={img} alt="imgage" />
+				{icon}
 			</div>
 			<h4 className="text-c_gray-900 text-xl font-medium">{title}</h4>
 			<p className="text-c_gray-200 w-[80%]">{description}</p>
@@ -24,4 +24,4 @@ const IntegrationItem = ({ title, description, img }: Props) => {
 	);
 };
 
-export default IntegrationItem;
+export default FeatureItem;
